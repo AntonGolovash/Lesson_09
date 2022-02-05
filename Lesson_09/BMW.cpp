@@ -1,24 +1,25 @@
-#include "Audi.h"
+#include "BMW.h"
+
 template<class T>
-Audi<T>::Audi() : Car<T>()
+BMW<T>::BMW() : Car<T>()
 {
-	cout << "Audi constructor default:\t" << this << endl;
+	cout << "BMW constructor default:\t" << this << endl;
 }
 
 template<class T>
-Audi<T>::~Audi()
+BMW<T>::~BMW()
 {
-	cout << "Audi destructor:\t" << this << endl;
+	cout << "BMW destructor:\t" << this << endl;
 }
 
 template<class T>
-void Audi<T>::SetParams(T key, string jsonValue)
+void BMW<T>::SetParams(T key, string jsonValue)
 {
 	this->_params.insert(pair<T, string>(key, jsonValue));
 }
 
 template<class T>
-string Audi<T>::ToString()
+string BMW<T>::ToString()
 {
 	this->ss << "car:\t" << typeid(this).name() << endl;
 	for (auto it = this->_params.begin(); it != this->_params.end(); it++)

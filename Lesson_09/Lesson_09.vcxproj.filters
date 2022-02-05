@@ -24,12 +24,18 @@
     <ClCompile Include="Audi.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
+    <ClCompile Include="BMW.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Car.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
     <ClInclude Include="Audi.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="BMW.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
   </ItemGroup>
